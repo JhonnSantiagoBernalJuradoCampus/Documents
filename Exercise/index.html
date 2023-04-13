@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer ></script>
 </head>
 <body>
     <form>
@@ -14,10 +14,11 @@
             <label>Color</label>
             <input type="color" name="color"><br>
             <label>Dimension</label>
-            <input type="range" name="dimension"><br>
+            <input type="range" min="0" max="20" name="dimension">
+            <p>Valor: <span id="valorRange"></span></p>
             <fieldset>
                 <legend>Marca</legend>
-                <input type="radio" name="marca" value="Mongo"><label>Mongo</label><br>
+                <input type="radio" name="marca" value="Mongol"><label>Mongol</label><br>
                 <input type="radio" name="marca" value="Norma"><label>Norma</label><br>
                 <input type="radio" name="marca" value="Fabel Castle"><label>Fabel Castle</label><br>
                 <input type="radio" name="marca" value="Big"><label>Big</label><br>
@@ -39,14 +40,14 @@
     <table border="solid">
         <thead>
             <tr>
-                <th>Color</th>
-                <th>Dimension</th>
-                <th>Marca</th>
-                <th>Borrador</th>
-                <th>Material</th>
+                <th width="80px">Color</th>
+                <th width="80px">Dimension</th>
+                <th width="80px">Marca</th>
+                <th width="80px">Borrador</th>
+                <th width="80px">Material</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="tbody">
             
         </tbody>
     </table>
